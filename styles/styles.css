@@ -1,0 +1,199 @@
+:root {
+/* Colors */
+
+    /* primary color */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    /*  */
+
+    /* neutral color */
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    /*  */
+
+/* end */
+
+/* Typography */
+
+    /* body */
+    font-size: 16px;
+    /*  */
+
+    /* fonts */
+    font-family: [Young Serif];
+    font-weight: 400;
+    font-family: [Outfit];
+    font-weight: 400, 600, 700;
+    font-family: [Young Serif];
+    font-weight: 400;
+    /*  */
+
+/* end */
+
+/* Layout */
+
+    /*  -Mobile: 375px
+        -Desktop: 1440px */
+
+/* end */
+}
+
+/* Tipologia de letra */
+
+@font-face {
+    font-family: "Young-serif";
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+@font-face {
+    font-family: "Outfit";
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+/* fin */
+
+/* Color de fondo principal y secundario */
+
+.background-color-pr {
+    background-color: var(--Eggshell);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.background-color-sec {
+    background-color: var(--White);
+    margin: 0rem 12.5rem 0rem 12.5rem;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* end */
+
+/* Imagen de la tortilla */
+
+.img-tortilla {
+    margin: 2rem;
+    border-radius: 2%;
+}
+
+/* fin */
+
+/* Titulo*/
+
+header h1 {
+    font-family: Young-serif;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-top: 0rem;
+}
+
+/* fin */
+
+.main-body {
+    font-family: Outfit;
+    font-size: 16px;
+}
+
+.p1 {
+    margin: 0rem 2rem 2rem 2rem;
+    word-spacing: 0.25em;
+    line-height: 25px;
+}
+
+/* Recuadro rosa de "preparation time" */
+
+.recuadro-rosa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--Rose-White);
+    border-radius: 3%;
+    margin: 0rem 2rem 2rem 2rem;
+}
+h3 {
+    color: var(--Dark-Raspberry);
+    margin: 2rem 0rem 0rem 2rem;
+}
+li {
+    color: var(--Dark-Charcoal);
+}
+ul {
+    word-spacing: 0.25em;
+    line-height: 25px;
+}
+
+/* fin */
+
+/* Ingredients */
+
+h2 {
+    color: var(--Nutmeg);
+    font-family: Young-serif;
+    font-weight: lighter;
+    margin: 2rem 0rem 0rem 2rem;
+}
+.ul-2 {
+    word-spacing: 0.25em;
+    line-height: 25px;
+    margin-left: 2rem;
+}
+
+/* Fin */
+
+hr {
+    background-color: var(--Wenge-Brown);
+    height: .1px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+/* Instructions */
+
+ol {
+    word-spacing: 0.25em;
+    line-height: 25px;
+    margin-left: 2rem;
+    margin-right: 3rem;
+}
+
+/* fin */
+
+/* Nutrition (que es un recuadro) */
+
+p {
+    word-spacing: 0.25em;
+    line-height: 25px;
+    margin: 1rem 2rem 1rem 2rem;
+}
+.content-table { 
+    margin: 1rem 2rem 2rem 2rem;; 
+    font-size: 16px; 
+    font-family: Outfit; 
+    min-width: 450px;
+}
+@media (min-width: 450px) {
+    .content-table {
+        min-width: 90%;
+    }
+}
+.content-table th, td {
+    padding: 12px 15px;
+    border-bottom: .1px solid var(--Wenge-Brown);
+
+}
+.b1 {
+    color: var(--Dark-Raspberry);
+}
+
+/* fin */
+
+/* pie de pagina */
+
+.attribution { font-size: 12px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* fin */
